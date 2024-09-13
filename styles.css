@@ -15,10 +15,11 @@ html {
 }
 
 :root {
-  --main-color: #66fcf1;
-  --second-main-color: #45a29e;
   --bg-color: #0b0c10;
+  --second-main-color: #1f2833;
   --font-color: #c5c6c7;
+  --main-color: #66fcf1;
+  --sub-color: #45a29e;
 }
 
 body {
@@ -97,7 +98,7 @@ section {
   color: var(--font-color);
 }
 
-.home span {
+.span-color {
   color: var(--main-color);
 }
 
@@ -166,13 +167,56 @@ section {
   padding: 1rem 3rem;
   font-size: 3rem;
   transition: 0.5s;
-  font-weight: 500;
+  font-weight: bold;
   border-radius: 3px;
 }
 
 .btn:hover {
   transform: scale(1.1);
-  color: var(--second-main-color);
+  color: black;
   background-color: var(--main-color);
   box-shadow: 0 0 15px rgb(0, 119, 181);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--second-main-color);
+}
+
+.about img {
+  width: 32vw;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--main-color);
+  transition: 0.5s;
+}
+
+.about img:hover {
+  box-shadow: 0 0 15px var(--main-color), 0 0 25px var(--main-color),
+    0 0 35px var(--main-color);
+}
+
+.about h2 {
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about p {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
 }
