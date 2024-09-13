@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This project is a personal portfolio website for showcasing the skills, projects, and contact information of me. The website is designed to be responsive and user-friendly, with a clean and modern look.
+This [project](https://notadev900.github.io/Portfolio/) is a personal portfolio website for showcasing the skills, projects, and contact information of me. The website is designed to be responsive and user-friendly, with a clean and modern look.
 
 ## Key Features
 
@@ -41,5 +41,6 @@ This project is a personal portfolio website for showcasing the skills, projects
 ## How to Run
 1. Clone the repository.
 2. Open the `index.html` file in your browser.
+3. You can also access the website [here](https://notadev900.github.io/Portfolio/).
 
 This portfolio serves as a personal introduction and a showcase of web development projects and skills, aimed at potential employers or clients.
