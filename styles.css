@@ -90,7 +90,8 @@ section {
 
 .home {
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 4rem;
   color: var(--font-color);
@@ -98,4 +99,80 @@ section {
 
 .home span {
   color: var(--main-color);
+}
+
+.text-animation span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: cursor 1.15s step-end infinite, typing 1s steps(13) forwards;
+  border-right: 5px solid var(--main-color);
+  vertical-align: bottom;
+}
+
+/*Blinking effect */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12ch;
+  }
+}
+
+.home p {
+  margin-top: 2rem;
+}
+
+.social-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 4rem;
+  color: var(--font-color);
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--font-color);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-icon a:hover {
+  color: rgb(0, 119, 181);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgb(0, 119, 181);
+  border-color: rgb(0, 119, 181);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  transition: 0.5s;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: var(--second-main-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 15px rgb(0, 119, 181);
 }
