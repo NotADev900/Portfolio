@@ -94,7 +94,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--font-color);
 }
 
@@ -245,6 +245,13 @@ section {
     display: block;
   }
 
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+  }
+
   .about {
     flex-direction: column-reverse;
   }
@@ -255,5 +262,11 @@ section {
 
   .about img {
     width: 50vw;
+  }
+}
+
+@media (max-width: 667px) {
+  html {
+    font-size: 50%;
   }
 }
