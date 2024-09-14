@@ -191,7 +191,7 @@ section {
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: black;
   background-color: var(--main-color);
   box-shadow: 0 0 15px var(--main-color);
@@ -233,6 +233,14 @@ section {
   margin: 2rem 0;
 }
 
+.about .btn-group a {
+  font-size: 2rem;
+}
+
+.about .btn-group a:hover {
+  transform: scale(1.2) translateX(2rem);
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -267,6 +275,10 @@ section {
 
   .about img {
     width: 50vw;
+  }
+
+  .about .btn-group {
+    justify-content: center;
   }
 }
 
