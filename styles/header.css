@@ -1,0 +1,74 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 12%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+#menu-logo {
+  font-size: 3rem;
+  color: var(--main-color);
+  display: none;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--font-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.logo span {
+  background: linear-gradient(
+    to right,
+    var(--font-color) 10%,
+    var(--main-color)
+  );
+  background-clip: text;
+  color: transparent;
+  margin-left: -0.5rem;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.navbar a {
+  font-size: 2rem;
+  margin-left: 4rem;
+  color: var(--font-color);
+  font-weight: 500;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: var(--main-color);
+}
+
+/* adding an underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.3rem;
+  opacity: 0;
+  background-color: var(--main-color);
+  transition: 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
