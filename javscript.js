@@ -5,3 +5,7 @@ function whenClicked(nav) {
     console.log("Success");
   }
 }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
