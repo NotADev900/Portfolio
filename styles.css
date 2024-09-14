@@ -228,6 +228,11 @@ section {
   text-align: justify;
 }
 
+.about .btn-group {
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
