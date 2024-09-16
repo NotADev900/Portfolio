@@ -4,6 +4,9 @@
   --second-bg-color: #393e46;
   --main-color: #00adb5;
   --font-color: #eeeeee;
+  --large-font: 4rem;
+  --medium-fnot: 3rem;
+  --small-font: 2rem;
 }
 
 * {
