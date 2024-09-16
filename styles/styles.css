@@ -3,15 +3,20 @@ section {
   padding: 10rem 12%;
 }
 
+/* Changes the background on alternate sections */
+section:nth-child(even) {
+  background-color: var(--second-bg-color);
+}
+
 .home {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--font-color);
 }
 
+/* highlights keywords */
 .span-color {
   color: var(--main-color);
   font-weight: 700;
@@ -22,9 +27,9 @@ section {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  animation: cursor 1.15s step-end infinite, typing 7s steps(13) infinite;
   border-right: 5px solid var(--main-color);
   vertical-align: bottom;
+  animation: cursor 1.15s step-end infinite, typing 7s steps(13) infinite;
 }
 
 /*Blinking effect */
@@ -57,11 +62,12 @@ section {
 }
 
 .home p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-.social-icon a {
+.social-icons a {
   display: inline-flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin: 1rem;
@@ -74,11 +80,24 @@ section {
   transition: 0.5s;
 }
 
-.social-icon a:hover {
+.social-icons a:hover {
   color: var(--main-color);
   transform: scale(1.1);
   box-shadow: 0 0 15px var(--main-color);
   border-color: var(--main-color);
+}
+
+.social-icons a:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  font-size: 2rem;
+  bottom: -4rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: 500;
 }
 
 .btn-group {
@@ -110,7 +129,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  background-color: var(--second-bg-color);
 }
 
 .about img {
