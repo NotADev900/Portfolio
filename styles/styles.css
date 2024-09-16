@@ -14,6 +14,7 @@ section {
 
 .span-color {
   color: var(--main-color);
+  font-weight: 700;
 }
 
 .text-animation span {
@@ -74,17 +75,10 @@ section {
 }
 
 .social-icon a:hover {
-  color: var(--sub-color);
+  color: var(--main-color);
   transform: scale(1.1);
-  box-shadow: 0 0 15px var(--sub-color);
-  border-color: var(--sub-color);
-}
-
-.social-icon a:last-child:hover {
-  color: var(--sub-color);
-  transform: scale(1.1);
-  box-shadow: 0 0 15px var(--sub-color);
-  border-color: var(--sub-color);
+  box-shadow: 0 0 15px var(--main-color);
+  border-color: var(--main-color);
 }
 
 .btn-group {
@@ -92,21 +86,21 @@ section {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  font-size: 3rem;
 }
 
 .btn {
   border: 2px solid var(--font-color);
   color: var(--font-color);
-  padding: 1rem 3rem;
-  font-size: 3rem;
   transition: 0.5s;
   font-weight: bold;
   border-radius: 3px;
+  padding: 1rem 3rem;
 }
 
 .btn:hover {
   transform: scale(1.2);
-  color: black;
+  color: var(--font-color);
   background-color: var(--main-color);
   box-shadow: 0 0 15px var(--main-color);
 }
@@ -116,7 +110,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  background-color: var(--second-main-color);
+  background-color: var(--second-bg-color);
 }
 
 .about img {
@@ -151,8 +145,14 @@ section {
   font-size: 2rem;
 }
 
+#download-icon {
+  position: relative;
+  bottom: -0.1rem;
+}
+
 .about .btn-group a:hover {
   transform: scale(1.2) translateX(2rem);
+  border-color: var(--main-color);
 }
 
 ::-webkit-scrollbar {
@@ -188,7 +188,7 @@ section {
   }
 
   .about img {
-    width: 50vw;
+    display: none;
   }
 
   .about .btn-group {
