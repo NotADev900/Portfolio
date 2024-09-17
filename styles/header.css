@@ -81,27 +81,20 @@ header {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%;
+    width: 30%;
+    height: 100vh;
     background-color: var(--main-color);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
   }
 
   .navbar a {
     display: block;
+    margin: 0;
+    padding: 1rem 3rem;
   }
 
-  .about {
-    flex-direction: column-reverse;
-  }
-
-  .about h2 {
-    text-align: center;
-  }
-
-  .about img {
-    display: none;
-  }
-
-  .about .btn-group {
-    justify-content: center;
+  .navbar.active {
+    display: block;
   }
 }

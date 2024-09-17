@@ -171,3 +171,21 @@ section:nth-child(even) {
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
 }
+
+@media (max-width: 911px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about img {
+    display: none;
+  }
+
+  .about .btn-group {
+    justify-content: center;
+  }
+}
