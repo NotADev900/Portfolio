@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="icon" href="icons/HLEE.png" />
+    <script src="javscript.js" defer></script>
     <title>H Lee</title>
   </head>
   <body>
@@ -37,7 +39,7 @@
         <h3 class="text-animation">
           I'm a <span class="span-color">Web Developer</span>
         </h3>
-        <p>
+        <p class="description">
           A passionate web developer with a strong background in creating
           engaging, responsive and user-friendly websites.
         </p>
@@ -46,12 +48,17 @@
           <a
             href="https://www.linkedin.com/in/hao-lee-b96b37226"
             target="_blank"
+            class="social-button"
           >
             <i class="bx bxl-linkedin-square"></i>
             <div class="tooltip">LinkedIn</div>
           </a>
 
-          <a href="https://github.com/NotADev900" target="_blank">
+          <a
+            href="https://github.com/NotADev900"
+            target="_blank"
+            class="social-button"
+          >
             <i class="bx bxl-github"></i>
             <div class="tooltip">Github</div>
           </a>
@@ -59,6 +66,7 @@
           <a
             href="https://www.freecodecamp.org/certification/Haolee03/responsive-web-design"
             target="_blank"
+            class="social-button"
           >
             <i class="bx bxs-hot"></i>
             <div class="tooltip">FreeCodeCamp</div>
@@ -99,6 +107,51 @@
 
     <section id="projects"></section>
     <section id="contact"></section>
-    <script src="javscript.js"></script>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/hao-lee-b96b37226"
+          target="_blank"
+          class="social-button"
+        >
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a
+          href="https://github.com/NotADev900"
+          target="_blank"
+          class="social-button"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a
+          href="https://www.freecodecamp.org/certification/Haolee03/responsive-web-design"
+          class="social-button"
+          target="_blank"
+        >
+          <i class="bx bxs-hot"></i>
+        </a>
+      </div>
+      <div>
+        <a href="#home" class="logo">H <span>LEE</span></a>
+      </div>
+
+      <ul class="footer-lists">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

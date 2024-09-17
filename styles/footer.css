@@ -1,0 +1,25 @@
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .social-icons {
+  font-size: 3rem;
+}
+
+.footer-lists li {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.footer-lists a {
+  color: var(--font-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-lists a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
