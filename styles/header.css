@@ -85,7 +85,10 @@ header {
     height: 100vh;
     background-color: var(--main-color);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    pointer-events: none;
+    opacity: 0;
   }
 
   .navbar a {
@@ -96,5 +99,8 @@ header {
 
   .navbar.active {
     display: block;
+    transform: translateX(0);
+    pointer-events: auto;
+    opacity: 1;
   }
 }
