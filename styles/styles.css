@@ -10,7 +10,8 @@ section:nth-child(even) {
 
 .home {
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: var(--large-font);
   color: var(--font-color);
@@ -63,6 +64,7 @@ section:nth-child(even) {
 
 .description {
   margin-top: 1rem;
+  font-size: var(--medium-font);
 }
 
 .social-icons {
