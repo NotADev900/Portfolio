@@ -162,6 +162,42 @@ section:nth-child(even) {
   bottom: -0.1rem;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-layout {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.projects-layout-section {
+  font-size: var(--small-font);
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  padding: 0.3rem 1rem;
+  color: var(--font-color);
+  transition: 0.5s;
+}
+
+.projects-layout-section:hover {
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.projects-layout-section.active {
+  background-color: var(--main-color);
+}
+
+.projects-hero {
+  text-align: center;
+  font-size: var(--large-font);
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }

@@ -5,6 +5,7 @@ window.onbeforeunload = function () {
 const menuIcon = document.querySelector("#menu-icon");
 const navBar = document.querySelector(".navbar");
 const navBarLinks = document.querySelectorAll(".navbar a");
+const projectsLayout = document.querySelectorAll(".projects-layout-section");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
@@ -16,4 +17,11 @@ navBarLinks.forEach((link) => {
     navBar.classList.toggle("active");
     menuIcon.classList.toggle("bx-x");
   };
+});
+
+projectsLayout.forEach((link) => {
+  link.addEventListener("click", function () {
+    projectsLayout.forEach((link) => link.classList.remove("active"));
+    this.classList.add("active");
+  });
 });
