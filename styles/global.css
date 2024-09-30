@@ -7,6 +7,7 @@
   --large-font: 4rem;
   --medium-fnot: 3rem;
   --small-font: 2rem;
+  --animation-intervals: 0.3s;
 }
 
 * {
@@ -22,10 +23,30 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 599px) {
+  html {
+    font-size: 30%; /* 1rem = 8.8px */
+  }
+}
+
+/* For medium screens (tablets and small laptops) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+}
+
+/* For extra large screens (large desktops) */
+@media (min-width: 1440px) {
+  html {
+    font-size: 75%; /* 1rem = 12px */
+  }
 }
